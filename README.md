@@ -15,20 +15,22 @@ The goal of this configuration is to get code linting and formatting up and runn
 To install the package, run:
 
 ```shell
-npm install -D eslint-config-acme
+npm install -D eslint-config-cvc
 ```
 
 This will install the shared config, as well as its peer dependencies:
 
-- eslint
+- @typescript-eslint/eslint-plugin
+- @typescript-eslint/parser
 - eslint-config-airbnb
+- eslint-config-airbnb-typescript
 - eslint-config-prettier
 - eslint-plugin-import
 - eslint-plugin-jsx-a11y
 - eslint-plugin-prettier
 - eslint-plugin-react
 - eslint-plugin-react-hooks
-- prettier
+- eslint-plugin-simple-import-sort
 
 **NOTE:** if you are on an older version of `npm` (`<7.0.0`), you will need to install these manually:
 
@@ -38,7 +40,7 @@ npx install-peerdeps -D eslint-config-acme
 
 ## Usage
 
-To start using this shared config, add `eslint-config-acme` (or just `acme`) to either your `package.json`:
+To start using this shared config, add `eslint-config-` (or just ``) to either your `package.json`:
 
 ```jsx
 // package.json
