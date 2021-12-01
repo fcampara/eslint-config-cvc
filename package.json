@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cvc",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "ESLint + Prettier config for React (Next.js)",
   "main": "index.js",
   "files": [
