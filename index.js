@@ -3,12 +3,7 @@ const next = require('./lib/next.js');
 const react = require('./lib/react.js');
 
 module.exports = {
-  extends: [
-    'airbnb',
-    'airbnb/hooks',
-    'airbnb-typescript',
-    'plugin:prettier/recommended'
-  ],
+  extends: ['airbnb', 'airbnb/hooks', 'plugin:prettier/recommended'],
   env: {
     browser: true,
     commonjs: true,
@@ -24,10 +19,7 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: [
-    'simple-import-sort',
-    'import'
-  ],
+  plugins: ['simple-import-sort', 'import'],
   rules: {
     ...base,
     ...next,
